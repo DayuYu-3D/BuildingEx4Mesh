@@ -1,8 +1,7 @@
 # BuildingEx4Mesh
 
-# Stratified Transformer for 3D Point Cloud Segmentation
 
-This is the official PyTorch implementation of our paper [**A Bidirectionally Greedy Framework for Unsupervised 3D Building Extraction from Airborne-based 3D Meshes **](https://xxxx8.pdf) that has been accepted to Automation in Constrution.
+This is the official PyTorch implementation of our paper [*A Bidirectionally Greedy Framework for Unsupervised 3D Building Extraction from Airborne-based 3D Meshes *](https://xxxx8.pdf) that has been accepted to Automation in Constrution.
 
 # Get Started
 

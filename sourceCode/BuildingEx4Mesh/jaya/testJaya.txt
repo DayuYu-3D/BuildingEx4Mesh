@@ -1,0 +1,23 @@
+   void test()
+   {
+		//rand和种子是全局的
+		srand(time(NULL));//输入seed
+		std::vector<Variable> variables;
+		Variable variable1(-6., 6.);
+		Variable variable2(-6., 6.);
+		variables.push_back(variable1);
+		variables.push_back(variable2);
+		HimmelblauFunc hmfunc;
+		JayaClassic jaya(100, variables, false,&hmfunc);   
+		BestAndWorst beworst = jaya.run(100).getBestAndWorstValue();
+		std::cout << "best: " << beworst.bestV << std::endl;
+		std::cout << "worst: " << beworst.worstV << std::endl;
+		std::cout << "bestSolution: " << beworst.bestSolution._solution[0] << " " << beworst.bestSolution._solution[1] << std::endl;
+		std::cout << "=========\n";
+		JayaSelfAdaptive jayaAdpa(variables, false, &hmfunc);
+		BestAndWorst beworst1 = jayaAdpa.run(100).getBestAndWorstValue();
+		std::cout << "best ada: " << beworst1.bestV << std::endl;
+		std::cout << "worst ada: " << beworst1.worstV << std::endl;
+		std::cout << "bestSolution ada: " << beworst1.bestSolution._solution[0] << " " << beworst1.bestSolution._solution[1] << std::endl;
+		std::cout << "=========\n";
+    }

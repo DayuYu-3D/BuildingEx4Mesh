@@ -1,8 +1,21 @@
 # BuildingEx4Mesh
 
-This project hosts the code and dataset for implementing the bidirectionary greedy algorithm for unsupervised building extraction from mesh.
+# Stratified Transformer for 3D Point Cloud Segmentation
 
-> [**Unsupervised 3D Building Extraction from Airborne-based 3D Meshes Using a Bidirectionally Greedy Strategy**](https://1),  
+This is the official PyTorch implementation of our paper [**A Bidirectionally Greedy Framework for Unsupervised 3D Building Extraction from Airborne-based 3D Meshes **](https://xxxx8.pdf) that has been accepted to Automation in Constrution.
+
+# Get Started
+
+## Environment
+
+Install dependencies
+
+```
+C++17
+OpenMP
+QT 5.12.11
+CGAL
+```
 
 ![pipeline](demo/result1.png)
 ![pipeline](demo/result2.png)
